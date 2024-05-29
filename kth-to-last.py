@@ -49,3 +49,23 @@ llist.add(5)
 llist.add(7)
 llist.add(12)
 llist.add(9)
+
+
+def get_kth_to_last(k: int, llist: LinkedList):
+    temp_arr = []
+    current = llist.head
+
+    if current.next == None:
+        return llist.head
+    else:
+        temp_arr.append(current.value)
+        while current.next:
+            current = current.next
+            temp_arr.append(current.value)
+    return temp_arr[len(temp_arr) - k]
+
+
+if __name__ == "__main__":
+    print(f"Linked List: {llist}")
+    print("Finding 2nd from last:", get_kth_to_last(2, llist))
+    print("Finding 3rd from last:", get_kth_to_last(3, llist))

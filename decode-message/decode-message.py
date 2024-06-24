@@ -1,5 +1,4 @@
 # Return the decoded message: Return a whitespace separated string based on a hidden message found within a given file
-# Number of lines is expected to be odd!
 
 # Input file example:
 # 3 love

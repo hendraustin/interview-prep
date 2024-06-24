@@ -52,3 +52,4 @@ def decode_message(message_file: str) -> str:
 
 if __name__ == "__main__":
     print(decode_message("coded-message.txt"))
+    print(decode_message("complex-coded-message.txt"))
